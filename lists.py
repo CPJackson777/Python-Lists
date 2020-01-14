@@ -22,13 +22,12 @@ for number in numbers_1_to_10:
     for randomNumber in my_randoms:
         if randomNumber == number:
             the_numbers_match = True
-            break
-        else: the_numbers_match = False
             # the_numbers_match = True if randomNumber == number else False <--- or you can write it Ternary like this?
     
     # Does my_randoms contain number? Change the boolean.
     if the_numbers_match == True:
         print(f'{number} is in the random list')
-    else: print(f'{number} is NOT in the random list')
+    else: 
+        print(f'{number} is NOT in the random list')
 
     
